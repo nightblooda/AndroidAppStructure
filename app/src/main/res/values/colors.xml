@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1A1B1F</color>
+    <color name="colorPrimaryDark">#1A1B1F</color>
+    <color name="colorAccent">#C4A265</color>
+    <color name="tealDark">#0094DE</color>
+    <color name="gray1">#f1f1f1</color>
+    <color name="gray2">#c4c4c4</color>
+    <color name="writeLight">#ddd</color>
+    <color name="write">#bbb</color>
+    <color name="background">#1A1B1F</color>
+    <color name="backgroundbtn">#17181C</color>
+    <color name="black">#000</color>
+    <color name="distColor">#C4A265</color>
+    <color name="white">#fff</color>
+</resources>

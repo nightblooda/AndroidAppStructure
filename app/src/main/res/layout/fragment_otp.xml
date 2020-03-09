@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1B1F"
+    tools:context=".ui.auth.FragmentOtp">
+
+    <include
+        android:id="@+id/otp_toolbar"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/verify_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="550dp"
+        android:text="Verify"
+        android:textAlignment="center"
+        android:textColor="#ddd"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/verify_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginEnd="81dp"
+        android:layout_marginBottom="491dp"
+        android:text="Waiting to automatically send SMS to"
+        android:textAlignment="center"
+        android:textColor="#ddd"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/otp_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="451dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:gravity="right"
+            android:paddingVertical="10dp"
+            android:text="9106889708"
+            android:textColor="#ddd"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="55"
+            android:gravity="left"
+            android:paddingVertical="10dp"
+            android:text=". Wrong Number?"
+            android:textColor="#C4A265"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/otp_edittext"
+        android:layout_width="230dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginTop="304dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="360dp"
+        android:background="@drawable/otp_box"
+        android:hint="OTP"
+        android:letterSpacing="1"
+        android:maxLength="6"
+        android:paddingHorizontal="15dp"
+        android:paddingVertical="10dp"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/otp_detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="387dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="324dp"
+        android:text="Enter 6-digit code"
+        android:textAlignment="center"
+        android:textColor="#ddd"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/verify_btn"
+
+        android:layout_width="303dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="510dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="166dp"
+        android:background="@drawable/main_btn"
+        android:elevation="10dp"
+        android:text="Verify Now"
+        android:textAllCaps="false"
+        android:textColor="#ddd"
+        android:textSize="15sp"
+        android:translationZ="7dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/auth_nav_graph"
+    app:startDestination="@id/fragmentMobile">
+
+    <fragment
+        android:id="@+id/fragmentMobile"
+        android:name="com.brainonet.brainonet.ui.auth.FragmentMobile"
+        android:label="fragment_mobile"
+        tools:layout="@layout/fragment_mobile" >
+        <action
+            android:id="@+id/action_fragmentMobile_to_fragmentOtp"
+            app:destination="@id/fragmentOtp" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentOtp"
+        android:name="com.brainonet.brainonet.ui.auth.FragmentOtp"
+        android:label="fragment_otp"
+        tools:layout="@layout/fragment_otp" />
+</navigation>

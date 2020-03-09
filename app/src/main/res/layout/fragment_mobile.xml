@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1B1F"
+    tools:context=".ui.auth.FragmentMobile">
+
+    <include
+        layout="@layout/toolbar"
+        android:id="@+id/mobile_toolbar"
+        app:layout_constraintBottom_toTopOf="@id/mobile_linear"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/mobile_toolbar"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/moblie_img"
+        android:layout_margin="50dp"
+        android:weightSum="100"
+        android:id="@+id/mobile_linear"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="IND"
+            android:textSize="20dp"
+            android:paddingVertical="10dp"
+            android:layout_weight="15"
+            android:textColor="#ddd"/>
+        <EditText
+            android:id="@+id/mobile_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="85"
+            android:textColor="#ddd"
+            android:textColorHint="#bbb"
+            android:textSize="17dp"
+            android:hint="mobile no."
+            android:textAlignment="center"
+            android:paddingVertical="10dp"
+            android:backgroundTint="#bbb"
+            android:letterSpacing=".1"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/moblie_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="104dp"
+        android:src="@drawable/mobile"
+        app:layout_constraintBottom_toTopOf="@+id/start_btn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mobile_linear" />
+
+    <Button
+        android:translationZ="7dp"
+
+        android:id="@+id/otp_btn"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_margin="20dp"
+        android:elevation="10dp"
+        android:background="@drawable/main_btn"
+        android:text="Send OTP"
+        android:textColor="#ddd"
+        android:textSize="15sp"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/moblie_img" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
